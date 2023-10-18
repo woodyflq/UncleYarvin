@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: death;
+    src: url(./midia/Klinge\ Death\ Brush.ttf);
+}
+
+@font-face {
+    font-family: old;
+    src: url(./midia/Historical\ FellType\ Roman.otf);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+
+section .background-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+section .background-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+section .box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh; /* Use a altura de 100% da viewport para centralizar verticalmente */
+    }
+
+    section .conteudo img {
+    width: 1000px;
+    height: auto;
+    }
+
+    section .info {
+        width: 50%;
+        padding: 20px; /* Adicione algum espaçamento interno para o texto */
+        position: absolute;
+        z-index: 1;
+        bottom: 0; /* Posicionamento na parte inferior */
+        color: antiquewhite;
+    }
+    
+    section .info h6, a, p {
+        font-family: old;
+        font-size: large;
+        font-weight: bold;
+        color: antiquewhite;
+        z-index: 1;
+        text-decoration: none;
+    }
+
+    section .info a {
+        font-size: medium;
+        transition: font-style 0.1s; /* Adicione uma transição suave para a propriedade de estilo da fonte */
+    }
+    
+    section .info a:hover {
+        font-style: italic; /* Altere o estilo da fonte para itálico ao passar o mouse */
+    }
+
+    section .info h6{
+        font-size: medium;
+    }
+
+    section .info p{
+        font-size: large;
+        width: 45%;
+
+    }
+
+    .time{
+        font-family: old;
+        color: rgb(247, 239, 229);
+        font-weight: bolder;
+        position: absolute;
+        bottom: 47px;
+        right: 25px;
+        font-size: 19px;
+    }
+
+    @media screen and (max-width: 1024px){
+        section .box {
+            width: 100%;
+            padding: 2%;
+            background:(to right), rgba(0,0,0,0.3);
+            display: flex;
+    
+        }
+    }

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+}
+
+section .background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1; /* Defina z-index como -1 para que a imagem fique atrás de outros elementos */
+}
+
+section .conteudo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  filter: blur(0.5px); /* Ajuste o valor do borrão conforme necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Adicione uma cor de fundo com transparência */
+}
+
+section .conteudo img {
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    opacity: 1; /* Ajuste a opacidade da imagem conforme necessário */
+}
+
+
+/* Adicione um fundo com cor transparente à última div */
+.newsletter {
+    background: rgba(0, 0, 0, 1); /* Use a mesma temática, mas com transparência */
+    text-align: center;
+    max-width: 600px;
+    height: 55%;
+    padding: 50px 30px;
+    border-radius: 5px;
+    color: #e5e6e7;
+    position: absolute;
+    bottom: 10%;
+    left: 36%;
+    z-index: 3;
+    opacity: 0.8; /* Adicione opacidade se desejar */
+}
+
+
+.newsletter hr {
+    width: 90px;
+    height: 3px;
+    margin: 30px auto;
+    border: 0;
+    background: #D8D9DA;
+}
+
+.newsletter input {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 55px;
+    border: 0px;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #D8D9DA;
+}
+
+.newsletter button {
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    height: 70px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.28);
+    color: #D8D9DA;
+    padding: 0px 28px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+    position: absolute;
+    bottom: 150px;
+    left: 30%;
+    opacity: 0.8; /* Adicione opacidade */
+}
+
+.newsletter button:hover {
+    background-color: #111111;
+    border-color: #111111;
+    opacity: 1; /* Tornar o botão totalmente visível no hover */
+}
+
+/* Estilo para desabilitar seleção de texto */
+.no-select {
+  user-select: none; /* Isso desabilitará a seleção de texto em navegadores modernos */
+  -moz-user-select: none; /* Para navegadores Firefox mais antigos */
+  -webkit-user-select: none; /* Para navegadores WebKit (como o Chrome e o Safari) */
+  -ms-user-select: none; /* Para navegadores Internet Explorer/Edge */
+}
