@@ -1,3 +1,46 @@
+/* Estilos padrão que se aplicam a todas as telas */
+
+/* Estilos para telas menores, como dispositivos móveis */
+@media screen and (max-width: 768px) {
+    section .box {
+        padding: 5%;
+    }
+    section .conteudo img {
+        width: 100%;
+        max-width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    }
+    section .newsletter {
+      padding: 20px; /* Ajuste o espaçamento interno conforme necessário */
+      max-width: 90%; /* Ajuste a largura máxima conforme necessário */
+      text-align: center; /* Centralize o conteúdo verticalmente */
+    }
+  section .newsletter input[type="email"] {
+      width: 100%; /* Ocupa 100% da largura da área disponível */
+      max-width: 400px; /* Limitar a largura máxima do campo de entrada */
+  }
+
+  section .newsletter button {
+      width: 100%; /* Ocupa 100% da largura da área disponível */
+      max-width: 300px; /* Limitar a largura máxima do botão */
+  }
+
+  section .newsletter hr {
+      margin: 20px auto; /* Ajuste o espaçamento entre o separador e outros elementos */
+  }
+}
+
+
+/* Estilos para tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adicione regras de estilo específicas para tablets */
+}
+
+/* Estilos para telas maiores, como desktops */
+@media screen and (min-width: 1025px) {
+    /* Adicione regras de estilo específicas para telas maiores */
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -97,17 +140,11 @@ section .conteudo img {
 .newsletter button {
     border: 3px solid rgba(0, 0, 0, 0.3);
     border-radius: 8px;
-    height: 70px;
-    width: 250px;
     background-color: rgba(0, 0, 0, 0.28);
     color: #D8D9DA;
-    padding: 0px 28px;
     cursor: pointer;
     transition: 0.5s;
     font-size: 16px;
-    position: absolute;
-    bottom: 150px;
-    left: 30%;
     opacity: 0.8; /* Adicione opacidade */
 }
 

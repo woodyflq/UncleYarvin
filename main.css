@@ -1,3 +1,28 @@
+/* Estilos padrão que se aplicam a todas as telas */
+
+/* Estilos para telas menores, como dispositivos móveis */
+@media screen and (max-width: 768px) {
+    section .box {
+        padding: 5%;
+    }
+    section .conteudo img {
+        width: 100%;
+        max-width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    }
+}
+
+
+/* Estilos para tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adicione regras de estilo específicas para tablets */
+}
+
+/* Estilos para telas maiores, como desktops */
+@media screen and (min-width: 1025px) {
+    /* Adicione regras de estilo específicas para telas maiores */
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -54,11 +79,11 @@ section .box {
 }
 
 section .conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh; /* Use a altura de 100% da viewport para centralizar verticalmente */
-    }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; /* Use a altura de 100% da viewport para centralizar verticalmente */
+}
 
     section .conteudo img {
     width: 1000px;
@@ -66,12 +91,12 @@ section .conteudo {
     }
 
     section .info {
-        width: 50%;
-        padding: 20px; /* Adicione algum espaçamento interno para o texto */
-        position: absolute;
-        z-index: 1;
-        bottom: 0; /* Posicionamento na parte inferior */
-        color: antiquewhite;
+      width: 100%;
+      padding: 20px; /* Adicione algum espaçamento interno para o texto */
+      position: absolute;
+      z-index: 1;
+      bottom: 20px; /* Posicionamento na parte inferior */
+      color: antiquewhite;
     }
     
     section .info h6, a, p {
@@ -85,7 +110,7 @@ section .conteudo {
 
     section .info a {
         font-size: medium;
-        transition: font-style 0.1s; /* Adicione uma transição suave para a propriedade de estilo da fonte */
+        transition: font-style 0.1ms; /* Adicione uma transição suave para a propriedade de estilo da fonte */
     }
     
     section .info a:hover {
@@ -98,7 +123,7 @@ section .conteudo {
 
     section .info p{
         font-size: large;
-        width: 45%;
+        width: 60%;
 
     }
 
