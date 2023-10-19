@@ -104,7 +104,6 @@ section .conteudo img {
     padding: 50px 30px;
     border-radius: 5px;
     color: #e5e6e7;
-    position: absolute;
     bottom: 10%;
     z-index: 3;
     opacity: 0.8; /* Adicione opacidade se desejar */
