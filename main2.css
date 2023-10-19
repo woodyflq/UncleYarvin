@@ -106,7 +106,6 @@ section .conteudo img {
     color: #e5e6e7;
     position: absolute;
     bottom: 10%;
-    left: 36%;
     z-index: 3;
     opacity: 0.8; /* Adicione opacidade se desejar */
 }
